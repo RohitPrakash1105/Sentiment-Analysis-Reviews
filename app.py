@@ -40,7 +40,8 @@ if st.button("🔍 Analyze Sentiment"):
         elif pred == 1:
             st.warning(f"**Prediction:** {label_map[pred]}")
         else:
-            st.success(f"**Prediction:** {label_map[pred]}")
+            st.success(f"Prediction: **{labels[prediction]}**")
+
 
         # Show probability bars
         st.subheader("Confidence Scores")
@@ -54,3 +55,4 @@ if st.button("🔍 Analyze Sentiment"):
 # Footer
 st.markdown("---")
 st.markdown("Built with ❤️ using [Streamlit](https://streamlit.io) and [Hugging Face Transformers](https://huggingface.co/).")
+
